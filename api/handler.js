@@ -1,7 +1,7 @@
 'use strict';
 
 function comparable(colorsString) {
-  return colorsString.split('').sort().join('');
+  return colorsString.split('').sort().join('').toUpperCase();
 }
 
 function toAcronyms(str) {
@@ -10,7 +10,7 @@ function toAcronyms(str) {
             .replace(/mtg-black/g, 'B')
             .replace(/mtg-red/g, 'R')
             .replace(/mtg-green/g, 'G')
-            .replace(/[^WUBRG]/g, '');
+            .replace(/[^WUBRG]/ig, '');
 }
 
 const colorsToName = {
