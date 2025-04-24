@@ -79,10 +79,10 @@ const nameToColors = {
 function getNameOrColors(possibleColors, possibleName) {
   const nameAnswer = colorsToName[comparable(possibleColors)];
   const colorsAnswer = nameToColors[possibleName.trim().toLowerCase()];
-  if (nameAnswer) {
-    return nameAnswer;
-  } else if (colorsAnswer) {
+  if (colorsAnswer) {
     return colorsAnswer;
+  } else if (nameAnswer) {
+    return nameAnswer;
   } else {
     return 'Unknown';
   }
