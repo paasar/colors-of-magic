@@ -10,7 +10,7 @@ service: colors-of-magic
 # The `provider` block defines where your service will be deployed
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs22.x
   memorySize: 128
   region: eu-central-1
 
